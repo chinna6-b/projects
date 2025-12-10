@@ -17,7 +17,7 @@ app = Flask(__name__)
 app.secret_key = "grocery_mart_ai_secret_2025"
 
 # YOUR PATH
-SAVE_FOLDER = r"C:\Users\chinna\OneDrive\Desktop\inventory\sales-predictor"
+SAVE_FOLDER = "Grocery_Inventory_and_Sales_Dataset.csv"
 
 # Load model & encoders
 model = joblib.load(os.path.join(SAVE_FOLDER, "model.pkl"))
@@ -98,4 +98,5 @@ def index():
 if __name__ == "__main__":
 
     app.run(debug=False, port=5000)
+
 
