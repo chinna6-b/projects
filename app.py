@@ -24,7 +24,7 @@ model = joblib.load(os.path.join(SAVE_FOLDER, "model.pkl"))
 le_product = joblib.load(os.path.join(SAVE_FOLDER, "enc_product.pkl"))
 le_category = joblib.load(os.path.join(SAVE_FOLDER, "enc_category.pkl"))
 
-print("Grocery Mart AI Loaded – Ready!")
+print("Grocery Mart Loaded – Ready!")
 
 @app.route("/", methods=["GET", "POST"])
 def index():
@@ -98,3 +98,4 @@ def index():
 if __name__ == "__main__":
 
     app.run(debug=False, port=5000)
+
