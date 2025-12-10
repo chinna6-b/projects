@@ -1,4 +1,11 @@
 # app.py - FINAL VERSION WITH ERROR FIX
+import os
+from flask import Flask, render_template, request, flash
+# ... rest of your code ...
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port, debug=False)
 from flask import Flask, render_template, request, flash
 import joblib
 import pandas as pd
@@ -89,4 +96,5 @@ def index():
     return render_template("index.html")
 
 if __name__ == "__main__":
+
     app.run(debug=False, port=5000)
